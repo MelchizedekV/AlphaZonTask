@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailScreen">
+
+
+<ImageView
+    android:id="@+id/fullImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="50dp"
+    />
+
+    <TextView
+        android:id="@+id/txtWidthHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size in W*H"
+        app:layout_constraintTop_toBottomOf="@+id/fullImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/txtWidthHeightvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtWidthHeight"
+        app:layout_constraintStart_toStartOf="@+id/txtWidthHeight"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtquality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Quality in %"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/fullImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/txtqualityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtquality"
+        app:layout_constraintTop_toBottomOf="@+id/txtWidthHeight" />
+
+    <Button
+        android:id="@+id/orginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtWidthHeightvalue"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Orginal"
+        />
+
+    <Button
+        android:id="@+id/twentyfivepercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/orginal"
+        app:layout_constraintTop_toTopOf="@+id/orginal"
+        android:text="25%"
+        />
+
+    <Button
+        android:id="@+id/fiftypercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/twentyfivepercent"
+        app:layout_constraintTop_toTopOf="@+id/twentyfivepercent"
+        android:text="50%"
+        />
+
+    <Button
+        android:id="@+id/seventypercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/fiftypercent"
+        app:layout_constraintTop_toTopOf="@+id/fiftypercent"
+        android:text="75%"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
